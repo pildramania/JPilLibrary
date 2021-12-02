@@ -76,3 +76,52 @@ export function _setbottomMargin( select , a ) {
 export  function _a (a) {
       alert(a)
 }
+export function _upper(ar) {
+      return ar.toUpperCase()
+}
+export function _lower(ar) {
+      return ar.toLowerCase()
+}
+export var rem = 16
+export var em = 15.94
+export function _setpadding( ar , ar2 ) {
+      document.querySelector(ar).style.paddingTop = ar2
+      document.querySelector(ar).style.paddingBottom = ar2
+      document.querySelector(ar).style.paddingRight= ar2
+      document.querySelector(ar).style.paddingLeft = ar2
+}
+export function _setfontFamily( ar , ar2) {
+      document.querySelector(ar).style.fontFamily = ar2
+}
+export var singleDigit = [ 1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 , 10]
+export function _setBorderRadius( s , ar ) {
+      document.querySelector(s).style.borderRadius = ar
+} 
+export function _setdisplay( s , ar ) {
+      document.querySelector(s).style.display = ar
+} 
+export function _setpos( s , ar ) {
+      document.querySelector(s).style.position = ar
+} 
+export function _click( s , arg) {
+      document.querySelector(s).addEventListener('click' , arg)
+}
+export function _show( s ) {
+      document.querySelector(s).style.display = 'block'
+}
+export function _hide( s ) {
+      document.querySelector(s).style.display = 'none'
+}
+export function _inc( int ) {
+       return int++
+}
+export function _clickshow( s , ar) {
+      document.querySelector(s).addEventListener('click' , function() {
+            document.querySelector(ar).style.display = 'block'
+      })
+}
+export function _clickhide( s , ar) {
+      document.querySelector(s).addEventListener('click' , function() {
+            document.querySelector(ar).style.display = 'none'
+      })
+}
