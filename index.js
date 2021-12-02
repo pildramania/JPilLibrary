@@ -125,4 +125,4 @@ export function _clickhide( s , ar) {
             document.querySelector(ar).style.display = 'none'
       })
 }
-export var monkey = '1929'
+export var monkey = '1929 code'
