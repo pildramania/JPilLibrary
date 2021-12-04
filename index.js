@@ -1,4 +1,9 @@
-export function _lenc (a) {
+//Welcome to _print(_upper('pildramania library'))
+console.log('library working')
+
+
+//Functions , Classes , Objects , Variable , etc.
+export function _lenc(a) {
       return a.length  
 }
 export function _t (t) {
@@ -93,7 +98,7 @@ export function _setpadding( ar , ar2 ) {
 export function _setfontFamily( ar , ar2) {
       document.querySelector(ar).style.fontFamily = ar2
 }
-export var singleDigit = [ 1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 , 10]
+export var singleDigit = [ 1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 , 0]
 export function _setBorderRadius( s , ar ) {
       document.querySelector(s).style.borderRadius = ar
 } 
@@ -126,3 +131,75 @@ export function _clickhide( s , ar) {
       })
 }
 export var monkey = '1929 code'
+
+//to fetch files in json format
+export function _fjson ( link ) {
+      return fetch(link).then((text) => {
+            return text.json()
+      }).then((data) => {
+            return data
+      });
+      
+}
+
+//to fetch files in text / csv format
+export function _ftext ( link ) {
+      return fetch(link).then((text) => {
+            return text.text()
+      }).then((data) => {
+            return data
+      });
+      
+}
+
+//DOM prompt = prompt(var)
+export function _p(val) {
+      //var to store data
+      var value = prompt(val)
+      return value
+}
+
+//Function to find square root
+export function _sqrt(val) {
+      return Math.sqrt(val)
+}
+
+//Set Shadow
+export function _setshadow(s, val) {
+      document.querySelector(s).style.boxShadow = val
+}
+//Set Text Shadow
+export function _setTextShadow(s, val) {
+      document.querySelector(s).style.boxShadow = val
+}
+
+//Set Border Width
+export function _setBorderWidth(s, val) {
+      document.querySelector(s).style.borderWidth = val
+}
+
+//Set border color
+export function _setBorderColor(s, val) {
+      document.querySelector(s).style.borderColor = String(val)
+}
+
+//Set border style
+export function _setBorderStyle(s, val) {
+      document.querySelector(s).style.borderStyle = val
+}
+
+//Range
+// export function _range(newArray) {
+      // var sortedArray = newArray.sort()
+      // _print(sortedArray)
+//      
+      // console.log(Math.max(sortedArray))
+// }
+
+//New Text Node
+
+
+//Set border
+export function _setborder(s, arg) {
+      document.querySelector(s).style.border = arg
+}

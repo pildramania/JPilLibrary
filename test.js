@@ -1,10 +1,12 @@
 //Imports
 import { _lenc , _t , _half, _print, _rnum , _dbl, _add , _sub, _mult , _div , _rect , _square , tri , _calctri, days, months, year, lyear, _arrayD, _sethtml , 
 _setcolor , _setBackgroundColor , _setleftMargin, _setbottomMargin , _setrightMargin , _settopMargin, _a, _upper, _lower, rem, em, _setpadding, singleDigit , 
-_setfontFamily , _setBorderRadius , _setdisplay , _click , _show , _hide , _clickshow , _clickhide} from './index.js'
+    _setfontFamily, _setBorderRadius, _setdisplay, _click, _show, _hide, _clickshow, _clickhide, _fjson, _p, _sqrt, _box, _setBorderColor, _setBorderWidth,
+_setshadow , _setBorderStyle , _setTextShadow , _setpos , /*_range*/} from './index.js'
 
 
 //Library test
+var numbers = [9, 5, 3, 7 , 6 , 1 , -5]
 var a = 'JavascriptPildramaniaLibrary';
 var num = 100;
 var t = {
@@ -47,7 +49,7 @@ _setfontFamily('#para' , 'Fira Code')
 _setBorderRadius('#box' , '20px');
 _setdisplay('#box' , 'none')
 // _click('#button' , function(){
-//       _setdisplay('#box' , 'block')
+    //   _setdisplay('#box' , 'block')
 // })
 //_click('#button' , function() {
     //  _show('#box')
@@ -57,3 +59,19 @@ _clickhide('#button2' , '#box')
 //_click('#button2' , function() {
      // _hide('#box')
 //})
+_print(_fjson('http://api.open-notify.org/iss-now.json'))
+_click('#button3', () => {
+    var userInput = _p('Enter a text.');
+    _sethtml('#showVal', `You typed = ${userInput}`);
+
+})
+_setcolor('#showVal', 'white');
+_print(_sqrt(256))
+var box = new _box('halo', 5, 6)
+_print(box.getData())
+_setBorderStyle('#box' , 'solid')
+_setBorderWidth('#box', '2px');
+_setcolor('#box', 'white')
+_setshadow('#box', '2px 2px 2px black');
+_setTextShadow('#para', '2px 2px 2px black')
+_setrightMargin('#para', '780px');
